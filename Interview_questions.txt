@@ -1,0 +1,23 @@
+1.Purpose of EDA: 
+To summarize, understand, and uncover patterns, anomalies, or relationships in data before modeling.
+
+2.Boxplots in understanding a dataset: 
+Boxplots visualize distribution, median, quartiles, and outliers, helping identify variability and anomalies.
+
+3.Correlation and its usefulness: 
+Correlation measures the strength and direction of a linear relationship between variables; it helps identify related features for analysis or modeling.
+
+4.Detecting skewness in data: 
+Skewness is detected using statistics (skew() in Python) or visually via histograms and density plots. Positive skew = right tail, negative skew = left tail.
+
+5. Multicollinearity: 
+Occurs when independent variables are highly correlated, which can distort regression estimates and reduce model interpretability.
+
+6.Tools for EDA: 
+Python libraries like Pandas, NumPy, Matplotlib, Seaborn, and tools like Jupyter Notebook or Tableau for visualization.
+
+7. Example of EDA finding a problem:
+EDA revealed missing values in the Age column and extreme fare outliers in Titanic data, which guided data cleaning before modeling.
+
+8. Role of visualization in ML: 
+Visualization helps understand patterns, detect anomalies, communicate insights, and support feature selection for machine learning models.
