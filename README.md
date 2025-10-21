@@ -30,25 +30,25 @@ This project performs Exploratory Data Analysis (EDA) on the famous Titanic data
 
 ### Age Distribution
 
-![Age Distribution](Outputs/visuals/age_distribution.png)
+![Age Distribution](outputs/visuals/hist_Age.png)
 
 ### Fare Distribution & Outliers
 
 **Fare Distribution**
-![Fare Distribution](Outputs/visuals/fare_distribution.png)
+![Fare Distribution](outputs/visuals/hist_Fare.png)
 
 **Fare Boxplot**
-![Fare Boxplot](Outputs/visuals/fare_boxplot.png)
+![Fare Boxplot](outputs/visuals/boxplot_Fare.png)
 
 ### Feature Relationships
 
 **Pairplot**
-![Pairplot](Outputs/visuals/pairplot.png)
+![Pairplot](outputs/visuals/pairplot.png)
 
 ### Correlation Analysis
 
 **Correlation Heatmap**
-![Correlation Heatmap](Outputs/visuals/correlation_heatmap.png)
+![Correlation Heatmap](outputs/visuals/correlation_heatmap.png)
 
 ---
 
