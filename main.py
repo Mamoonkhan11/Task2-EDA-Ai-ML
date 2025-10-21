@@ -1,22 +1,35 @@
 # Running EDA pipelines end to analyze datasets
 
 import pandas as pd
-from src.Eda_stats import save_summary_csv
-from src.visuals import save_histogram, save_boxplot, save_pairplot, save_correlation_heatmap
-from src.inference import basic_inferences
+from src.Eda_stats import Save_summary_csv
+from src.visuals import Save_histogram, Save_boxplot, Save_pairplot, Save_correlation_heatmap
+from src.inference import Basic_inference
 
 def run_eda():
-    df = pd.read_csv("data/titanic.csv")
+    df = pd.read_csv("Data/Titanic-Dataset.csv")
     print("Loaded:", df.shape)
-    save_summary_csv(df, out_path="outputs/eda_summary.csv")
-    print("Summary saved")
-    save_histogram(df, "Age")
-    save_histogram(df, "Fare")
-    save_boxplot(df, "Fare")
-    save_pairplot(df, ["Age","Fare","Pclass","SibSp"])
-    save_correlation_heatmap(df)
-    inferences = basic_inferences(df)
-    print("Inferences:", inferences)
+    Save_summary_csv(df, output_path="Outputs/Eda_Summary.csv")
+    print("Summary saved in Output Directory!")
+
+    Save_histogram(df, "Age")
+    Save_histogram(df, "Fare")
+    Save_boxplot(df, "Fare")
+    Save_pairplot(df, ["Age","Fare","Pclass","SibSp"])
+    Save_correlation_heatmap(df)
+
+    inferences = Basic_inference(df)
+    def print_inferences(inferences):
+        print("\n Basic Inferences \n")
+        for title, info in inferences:
+            print(f"# {title}:")
+            if isinstance(info, dict):
+                for key in sorted(info.keys()):
+                    print(f"   {key}: {info[key]}")
+            else:
+                print(f"   {info}")
+            print()
+
+    print_inferences(inferences)
 
 if __name__ == "__main__":
     run_eda()
