@@ -119,7 +119,3 @@ The dataset contains 891 records with 12 columns:
 * Seaborn
 
 ---
-
-**Author:** Mamoon Khan
-**Date:** 2025-10-21
-**Made with ❤️ for Data Exploration**
